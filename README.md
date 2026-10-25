@@ -28,4 +28,6 @@ Create future migrations with `npm run db:create -- add_your_change`. Review eve
 
 The template intentionally has no login, school membership, roles, or business-data routes. Before adding school data endpoints, implement and verify server-side authentication and school context. Never use a client-supplied `school_id` as authorization. Add cross-school denial coverage before exposing business records.
 
+Read `docs/prd.md` for the product direction. Create a feature-specific spec under `docs/specs/` just before planning that feature; keep detailed feature requirements out of the always-loaded agent instructions.
+
 The local Docker credentials are for development only. The local PostgreSQL account is privileged for bootstrap convenience; use separate, least-privileged migration and application roles in shared or production environments. Never commit real secrets. See `HARNESS.md` and `engineering/` for the agent workflow and engineering rules.

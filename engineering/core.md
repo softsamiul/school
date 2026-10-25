@@ -8,7 +8,8 @@ Read this file before engineering work. Load the selected mode and relevant rule
 
 | Request | Mode | Read |
 |---|---|---|
-| Plan, design, or estimate a feature | Planning | `engineering/modes/planning.md` |
+| Plan a product feature | Planning | `engineering/modes/planning.md`, `docs/prd.md`, and the relevant `docs/specs/<feature>.md` |
+| Plan engineering work that is not a product feature | Planning | `engineering/modes/planning.md` |
 | Implement a plan or make a code change | Implementation | `engineering/modes/implementation.md` |
 | Review a diff or check readiness | Code review | `engineering/modes/code-review.md` |
 | Debug, explore, or answer an engineering question | Default | Implementation mode, narrowed to the requested scope |
@@ -32,7 +33,7 @@ If the request could mean either planning or implementation and that choice chan
 
 ## Invariants
 
-- All schools share one PostgreSQL database. Every school-owned record and query must be scoped by the server-verified `school_id` context. Never trust a client-supplied school ID as authorization.
+- All schools share one PostgreSQL database. School-user requests are scoped by the server-verified `school_id`. Platform operators have authorized cross-school access through a separate operator path. Never treat a client-supplied school ID alone as authorization.
 - The authentication, school membership, and role model are not yet implemented. Do not invent their storage or lifecycle; raise those choices when a task depends on them.
 - No authenticated business-data endpoints are enabled in the starter. Do not add one until its server-side school context and authorization are designed.
 - Validate untrusted input at the server boundary and enforce authorization on the server for every protected operation.

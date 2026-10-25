@@ -2,7 +2,7 @@
 
 - No database access or authorization decisions in React.
 - No authorization based only on client-provided school IDs, role names, or hidden UI controls.
-- No unscoped read, update, or delete of school-owned rows; no cross-school relationships or joins that omit school ownership checks.
+- No unscoped read, update, or delete of school-owned rows except explicitly authorized platform-operator operations with an explicit target-school or all-schools scope; no cross-school relationships or joins that omit school ownership checks.
 - No assumption that PostgreSQL RLS protects tables when the application runtime role owns those tables or bypasses RLS.
 - No unparameterized SQL, mass assignment of request bodies, or silent validation fallbacks.
 - No unbounded list endpoints or queries without a reasoned access path.
