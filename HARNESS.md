@@ -1,6 +1,6 @@
 # Engineering Harness — Team Handoff
 
-This repository contains a Codex and Claude Code engineering harness for a React + Vite frontend, Express 5 API, and one shared PostgreSQL database for all schools. The code is organized as an npm-workspace monorepo, with school-owned rows scoped by `school_id`. The API uses `pg` and SQL migrations. Authentication and product-specific roles remain to be designed.
+This repository contains a Codex and Claude Code engineering harness for a React + Vite + Tailwind CSS frontend, Express 5 API, and one shared PostgreSQL database for all schools. The code is organized as an npm-workspace monorepo, with school-owned rows scoped by `school_id`. The API uses `pg` and SQL migrations. Authentication and product-specific roles remain to be designed.
 
 ## Use it
 

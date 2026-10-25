@@ -4,7 +4,7 @@ Use this file for confirmed project-specific decisions and gotchas, not generali
 
 ## Confirmed starting context
 
-- Frontend: React.
+- Frontend: React with Vite and Tailwind CSS v4.
 - Backend: Express.js.
 - Database: PostgreSQL, one shared database and schema for all schools. School-owned records are scoped with `school_id`.
 - Tenant context: derive the active school from authenticated identity and verified membership on the server. The identity provider, membership and role model, and whether to add PostgreSQL row-level security are not yet chosen.

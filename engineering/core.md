@@ -2,7 +2,7 @@
 
 Read this file before engineering work. Load the selected mode and relevant rules before acting. The harness is intentionally small and adapts to the application's conventions as they become known.
 
-**Stack:** React + Vite frontend, Express 5 API, JavaScript ES modules, `pg` with reviewed SQL migrations, one shared PostgreSQL database for all schools, managed as an npm-workspace monorepo. Use a supported Node.js LTS release (24 preferred). School-owned records are isolated by a verified `school_id` tenant context. **Goal:** deliver understandable, secure changes that meet the task and can be verified. **Success:** applicable Definition of Done items are satisfied and the human handoff is clear.
+**Stack:** React + Vite + Tailwind CSS frontend, Express 5 API, JavaScript ES modules, `pg` with reviewed SQL migrations, one shared PostgreSQL database for all schools, managed as an npm-workspace monorepo. Use a supported Node.js LTS release (24 preferred). School-owned records are isolated by a verified `school_id` tenant context. **Goal:** deliver understandable, secure changes that meet the task and can be verified. **Success:** applicable Definition of Done items are satisfied and the human handoff is clear.
 
 ## Mode router
 

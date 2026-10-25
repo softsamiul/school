@@ -1,6 +1,7 @@
 # Frontend Rules
 
 - Use React function components and the conventions already present under `apps/web`.
+- Style with Tailwind CSS v4 through the Vite plugin. Prefer utilities in JSX; keep global CSS limited to Tailwind import and genuinely global base rules.
 - Keep browser code presentation-focused. It calls the Express API; it never connects to PostgreSQL or makes authorization decisions.
 - Use shared schemas from `packages/contracts` for API payloads where they are defined. Validate responses at boundaries when the client depends on their shape.
 - For asynchronous UI, expose loading, success, empty, and failure states as applicable. Use semantic HTML, keyboard-operable controls, and clear labels.

@@ -1,6 +1,6 @@
 # School SaaS
 
-A JavaScript monorepo starter for a school management SaaS: React + Vite, Express 5, and PostgreSQL. All schools share one database; school-owned data must be scoped by a server-verified `school_id`. The API uses `pg` and explicit SQL migrations.
+A JavaScript monorepo starter for a school management SaaS: React + Vite + Tailwind CSS, Express 5, and PostgreSQL. All schools share one database; school-owned data must be scoped by a server-verified `school_id`. The API uses `pg` and explicit SQL migrations.
 
 ## Requirements
 

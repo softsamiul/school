@@ -8,7 +8,7 @@ For engineering work, read `engineering/core.md` in full, then the routed mode a
 
 ## Ground rules
 
-- Follow the established app and harness conventions. The starter uses React with Vite, Express 5, PostgreSQL through `pg`, SQL migrations with node-pg-migrate, JavaScript ES modules, and npm workspaces. Keep authentication, authorization roles, and product behavior adaptable until specified.
+- Follow the established app and harness conventions. The starter uses React with Vite and Tailwind CSS, Express 5, PostgreSQL through `pg`, SQL migrations with node-pg-migrate, JavaScript ES modules, and npm workspaces. Keep authentication, authorization roles, and product behavior adaptable until specified.
 - Ask about decisions that materially affect product behavior, data ownership, security boundaries, or irreversible changes. Infer routine implementation details from the code when possible.
 - Keep changes focused. Flag unrelated findings separately and do not revert work you did not create.
 - Explain findings in plain language, with paths and line references in a separate `Where:` line.
