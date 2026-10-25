@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:18-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: school_saas_dev
+      POSTGRES_USER: school_dev
+      POSTGRES_PASSWORD: school_dev_local_only
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - school_postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U school_dev -d school_saas_dev"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  school_postgres_data:

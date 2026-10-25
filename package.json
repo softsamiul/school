@@ -1,0 +1,24 @@
+{
+  "name": "school-saas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.12.0 || ^24.0.0",
+    "npm": ">=11"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,green \"npm run dev --workspace @school/web\" \"npm run dev --workspace @school/api\"",
+    "build": "npm run build --workspace @school/web",
+    "start": "npm run start --workspace @school/api",
+    "db:create": "npm run db:create --workspace @school/api --",
+    "db:migrate": "npm run db:migrate --workspace @school/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

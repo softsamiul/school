@@ -1,0 +1,22 @@
+{
+  "name": "@school/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "db:create": "node-pg-migrate create --migration-file-language javascript --migrations-dir ./migrations",
+    "db:migrate": "node src/db/migrate.js"
+  },
+  "dependencies": {
+    "@school/contracts": "*",
+    "dotenv": "^16.6.1",
+    "express": "^5.3.0",
+    "helmet": "^8.1.0",
+    "node-pg-migrate": "^9.0.0",
+    "pg": "^8.23.1",
+    "pino": "^9.9.5",
+    "pino-http": "^10.5.0"
+  }
+}
